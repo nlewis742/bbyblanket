@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baby Blanket &amp; Beyond | Family Support Charity</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #334541; background: #fcfaf5; font-family: Arial, sans-serif; }
+    header { padding: 22px 8%; display: flex; align-items: center; justify-content: space-between; }
+    .brand { font: bold 25px Georgia, serif; color: #334541; text-decoration: none; }
+    nav { display: flex; gap: 25px; }
+    nav a { color: #53645e; text-decoration: none; font-size: 14px; }
+    .hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; min-height: 470px; margin: 12px auto; max-width: 1100px; background: #e8efe7; border-radius: 20px; overflow: hidden; }
+    .copy { padding: 55px 12%; }
+    .kicker { color: #718477; text-transform: uppercase; font-size: 12px; letter-spacing: 2px; }
+    h1 { font: 500 clamp(42px, 6vw, 68px)/1.05 Georgia, serif; letter-spacing: -2px; margin: 18px 0; }
+    .copy p { color: #5e7068; line-height: 1.7; max-width: 390px; }
+    .button { display: inline-block; margin-top: 16px; padding: 14px 23px; border-radius: 30px; background: #354942; color: white; text-decoration: none; }
+    .art { min-height: 470px; display: grid; place-items: center; background: #f2e6d8; }
+    .blanket { width: 65%; aspect-ratio: 1.2; transform: rotate(-8deg); border: 12px solid #fff8ed; border-radius: 18px; background-color: #df9a84; background-image: radial-gradient(#fff4e4 2px, transparent 3px); background-size: 24px 24px; box-shadow: 0 22px 40px #584a3b33; }
+    .promise { display: flex; justify-content: space-around; gap: 15px; max-width: 1000px; margin: 35px auto 55px; color: #586b62; text-align: center; font-size: 14px; }
+    .promise span { display: block; color: #7f9b82; font-size: 24px; margin-bottom: 8px; }
+    h2 { font: 500 36px Georgia, serif; margin: 12px 0; }
+    h3 { font: 500 19px Georgia, serif; margin: 13px 0 5px; }
+    .info-page { padding: 55px 8%; border-top: 1px solid #e9e5dc; }
+    .info-page > * { max-width: 1000px; margin-left: auto; margin-right: auto; }
+    .info-page h2 { text-align: center; }
+    .info-copy { color: #5e7068; line-height: 1.7; text-align: center; }
+    .info-items { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; max-width: 1000px; margin: 28px auto 0; }
+    .info-items article { padding: 22px; background: #e8efe7; border-radius: 12px; }
+    .info-items h3 { margin-top: 0; }
+    #support .support-rose { background: #f4e6e1; border-top: 4px solid #d99581; }
+    #support .support-sage { background: #e8efe7; border-top: 4px solid #aabd9f; }
+    #support .support-blue { background: #e6eef0; border-top: 4px solid #9eb9c0; }
+    .event-note { max-width: 700px; padding: 22px; background: #f2e6d8; border-radius: 12px; text-align: center; }
+    .mini-calendar { max-width: 360px; margin: 24px auto 0; padding: 18px; background: #fff; border: 1px solid #e9e5dc; border-radius: 12px; }
+    .calendar-header { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px; }
+    .calendar-header h3 { margin: 0; font-size: 17px; text-align: center; }
+    .calendar-nav { width: 34px; height: 34px; border: 1px solid #d9e1d8; border-radius: 50%; background: #fcfaf5; color: #334541; font-size: 20px; cursor: pointer; }
+    .calendar-nav:focus-visible { outline: 3px solid #7f9b82; outline-offset: 2px; }
+    .calendar-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; text-align: center; }
+    .calendar-weekday, .calendar-day { display: grid; place-items: center; min-width: 0; aspect-ratio: 1; font-size: 13px; }
+    .calendar-weekday { color: #718078; font-size: 11px; font-weight: bold; }
+    .calendar-day { border-radius: 50%; color: #334541; }
+    .calendar-day.is-outside { color: #b4bdb6; }
+    .calendar-day.is-today { background: #354942; color: #fff; font-weight: bold; }
+    footer { padding: 24px; text-align: center; border-top: 1px solid #e9e5dc; color: #718078; font-size: 13px; }
+    @media (max-width: 650px) { header { padding: 18px; flex-wrap: wrap; gap: 14px; } nav { width: 100%; justify-content: center; flex-wrap: wrap; gap: 12px 18px; } .hero { grid-template-columns: 1fr; margin: 8px 12px; } .copy { padding: 42px 9%; } .art { min-height: 300px; } .promise { padding: 0 12px; font-size: 12px; } .info-items { grid-template-columns: 1fr; max-width: 400px; } .info-page { padding: 40px 18px; } }
+  </style>
+</head>
+<body>
+  <header><a class="brand" href="#top">Baby Blanket &amp; Beyond</a><nav aria-label="Main navigation"><a href="#top">Home</a><a href="#help">How to Help</a><a href="#events">Calendar &amp; Events</a><a href="#resources">Resources</a></nav></header>
+  <main id="top">
+    <section class="hero">
+      <div class="copy"><div class="kicker">A community charity for families</div><h1>Essential support for growing families.</h1><p>Baby Blanket &amp; Beyond helps low-income families access essential items for their children, including clothing, car seats, and cribs.</p><a class="button" href="#support">See the support we offer</a></div>
+      <div class="art" role="img" aria-label="A cozy coral baby blanket with a dotted pattern"><div class="blanket"></div></div>
+    </section>
+    <section class="info-page" id="help" aria-labelledby="help-title">
+      <div class="kicker" style="text-align:center">Make a difference</div><h2 id="help-title">How to Help</h2>
+      <p class="info-copy">Help us provide practical essentials and support to families in our community.</p>
+      <div class="info-items">
+        <article><h3>Donate</h3><p class="info-copy">Ask us about current needs and requirements before donating clothing, car seats, cribs, or other essentials.</p></article>
+        <article><h3>Volunteer</h3><p class="info-copy">Share your time to help organize donations and support families in the community.</p></article>
+        <article><h3>Spread the word</h3><p class="info-copy">Tell families and local organizations about the support available through Baby Blanket &amp; Beyond.</p></article>
+      </div>
+    </section>
+    <section class="info-page" id="events" aria-labelledby="events-title">
+      <div class="kicker" style="text-align:center">Get involved</div><h2 id="events-title">Calendar &amp; Events</h2>
+      <p class="event-note">Event announcements will be posted here when scheduled. Use the calendar below to view dates.</p>
+      <div class="mini-calendar" aria-label="Monthly calendar">
+        <div class="calendar-header">
+          <button class="calendar-nav" id="previous-month" type="button" aria-label="Previous month">&lsaquo;</button>
+          <h3 id="calendar-month" aria-live="polite"></h3>
+          <button class="calendar-nav" id="next-month" type="button" aria-label="Next month">&rsaquo;</button>
+        </div>
+        <div class="calendar-grid" id="calendar-grid" aria-label="Calendar dates"></div>
+      </div>
+    </section>
+    <section class="info-page" id="resources" aria-labelledby="resources-title">
+      <div class="kicker" style="text-align:center">Helpful information</div><h2 id="resources-title">Resources</h2>
+      <div class="info-items">
+        <article><h3>For families</h3><p class="info-copy">Low-income families can contact Baby Blanket &amp; Beyond to ask about available items and how to request support.</p></article>
+        <article><h3>Essential items</h3><p class="info-copy">We offer clothing, car seats, and cribs to help meet practical needs for babies and children.</p></article>
+        <article><h3>Community partners</h3><p class="info-copy">Local organizations can share information about our family support with the people they serve.</p></article>
+      </div>
+    </section>
+    <section class="promise" id="promise" aria-label="Our commitment"><div><span>♡</span>Support for families</div><div><span>✿</span>Practical essentials</div><div id="care"><span>☁</span>Care for little ones</div></section>
+    <section class="info-page" id="support" aria-labelledby="support-title">
+      <div class="kicker" style="text-align:center">Family support</div><h2 id="support-title">What We Provide</h2><p class="info-copy">We help low-income families access essential items for their children. Availability may vary.</p>
+      <div class="info-items">
+        <article class="support-rose"><h3>Clothing</h3><p class="info-copy">Clothing essentials for babies and children.</p></article>
+        <article class="support-sage"><h3>Car Seats</h3><p class="info-copy">Car seats to help families meet their children's transportation needs.</p></article>
+        <article class="support-blue"><h3>Cribs</h3><p class="info-copy">Cribs to support families preparing a place for their babies to sleep.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer>Baby Blanket &amp; Beyond · Community charity supporting low-income families.</footer>
+  <script>
+    const calendarGrid = document.getElementById('calendar-grid');
+    const calendarMonth = document.getElementById('calendar-month');
+    const today = new Date();
+    let displayedMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+
+    function renderCalendar() {
+      const year = displayedMonth.getFullYear();
+      const month = displayedMonth.getMonth();
+      const firstWeekday = new Date(year, month, 1).getDay();
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+      const previousMonthDays = new Date(year, month, 0).getDate();
+
+      calendarMonth.textContent = new Intl.DateTimeFormat(undefined, { month: 'long', year: 'numeric' }).format(displayedMonth);
+      calendarGrid.replaceChildren();
+
+      for (let weekday = 0; weekday < 7; weekday += 1) {
+        const label = document.createElement('span');
+        label.className = 'calendar-weekday';
+        label.textContent = new Intl.DateTimeFormat(undefined, { weekday: 'short' }).format(new Date(2024, 0, 7 + weekday));
+        calendarGrid.append(label);
+      }
+
+      for (let cell = 0; cell < 42; cell += 1) {
+        const dayNumber = cell - firstWeekday + 1;
+        const date = new Date(year, month, dayNumber);
+        const day = document.createElement('span');
+        const inCurrentMonth = dayNumber > 0 && dayNumber <= daysInMonth;
+        const visibleDay = dayNumber < 1 ? previousMonthDays + dayNumber : dayNumber > daysInMonth ? dayNumber - daysInMonth : dayNumber;
+        const isToday = inCurrentMonth && date.getFullYear() === today.getFullYear() && date.getMonth() === today.getMonth() && date.getDate() === today.getDate();
+
+        day.className = `calendar-day${inCurrentMonth ? '' : ' is-outside'}${isToday ? ' is-today' : ''}`;
+        day.textContent = visibleDay;
+        day.setAttribute('aria-label', new Intl.DateTimeFormat(undefined, { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' }).format(date));
+        if (isToday) day.setAttribute('aria-current', 'date');
+        calendarGrid.append(day);
+      }
+    }
+
+    document.getElementById('previous-month').addEventListener('click', () => {
+      displayedMonth = new Date(displayedMonth.getFullYear(), displayedMonth.getMonth() - 1, 1);
+      renderCalendar();
+    });
+    document.getElementById('next-month').addEventListener('click', () => {
+      displayedMonth = new Date(displayedMonth.getFullYear(), displayedMonth.getMonth() + 1, 1);
+      renderCalendar();
+    });
+    renderCalendar();
+  </script>
+</body>
+</html>
